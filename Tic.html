@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tic.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <form id="tictactoe">
+        <input type="radio" name="cell-0" id="cell-0-x" />
+        <input type="radio" name="cell-0" id="cell-0-o" />
+        <input type="radio" name="cell-1" id="cell-1-x" />
+        <input type="radio" name="cell-1" id="cell-1-o" />
+        <input type="radio" name="cell-2" id="cell-2-x" />
+        <input type="radio" name="cell-2" id="cell-2-o" />
+        <input type="radio" name="cell-3" id="cell-3-x" />
+        <input type="radio" name="cell-3" id="cell-3-o" />
+        <input type="radio" name="cell-4" id="cell-4-x" />
+        <input type="radio" name="cell-4" id="cell-4-o" />
+        <input type="radio" name="cell-5" id="cell-5-x" />
+        <input type="radio" name="cell-5" id="cell-5-o" />
+        <input type="radio" name="cell-6" id="cell-6-x" />
+        <input type="radio" name="cell-6" id="cell-6-o" />
+        <input type="radio" name="cell-7" id="cell-7-x" />
+        <input type="radio" name="cell-7" id="cell-7-o" />
+        <input type="radio" name="cell-8" id="cell-8-x" />
+        <input type="radio" name="cell-8" id="cell-8-o" />
+
+        <div id="board" class="center">
+            <div class="tile" id="tile-0">
+                <label for="cell-0-x"></label>
+                <label for="cell-0-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-1">
+                <label for="cell-1-x"></label>
+                <label for="cell-1-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-2">
+                <label for="cell-2-x"></label>
+                <label for="cell-2-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-3">
+                <label for="cell-3-x"></label>
+                <label for="cell-3-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-4">
+                <label for="cell-4-x"></label>
+                <label for="cell-4-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-5">
+                <label for="cell-5-x"></label>
+                <label for="cell-5-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-6">
+                <label for="cell-6-x"></label>
+                <label for="cell-6-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-7">
+                <label for="cell-7-x"></label>
+                <label for="cell-7-o"></label>
+                <div></div>
+            </div>
+            <div class="tile" id="tile-8">
+                <label for="cell-8-x"></label>
+                <label for="cell-8-o"></label>
+                <div></div>
+            </div>
+        </div>
+
+        <div>
+            <span style="font-weight: bolder;
+            font-size: 30px;">
+                Player 1
+                <img id="Player1" src="https://th.bing.com/th/id/OIP.H9FYQceSefc4O18Tj5zxZwHaHa?pid=ImgDet&rs=1">
+            </span>
+
+            <span style="float: right;font-weight: bolder;
+            font-size: 30px;">
+                <img id="Player2" src="https://th.bing.com/th/id/OIP.H9FYQceSefc4O18Tj5zxZwHaHa?pid=ImgDet&amp;rs=1">
+                Player 2
+            </span>
+
+
+        </div>
+
+
+
+        <div id="end">
+
+
+
+            <div id="message" class="center">
+
+                <img src="https://th.bing.com/th/id/R.e8f0ee85e41290e0491ea1c7b4360461?rik=rasUAVSbHbyk4g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fhappy-emoji-transparent%2fhappy-emoji-transparent-3.png&ehk=6KBj0hyiOcBixyGa24SinetoBgDt7N5pqzBE5xXGZc8%3d&risl=&pid=ImgRaw&r=0"
+                    alt="" srcset="">
+
+
+                <div>
+                    <input type="reset" for="tictactoe" value="Play again" />
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 500px;">
+            <img id="myBtn"
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/935eb232333287.567c4218b2bc6.gif" alt=""
+                style="    width:45px;
+    margin: -15px 1px;
+    border-radius: 120px !important">
+
+        </div>
+
+
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <span class="close">&times;</span>
+
+
+                <div style="text-align: center;">
+
+                    <div style="margin-left: 20px;">
+                        <label class="lb2" for="" id="Cplay1">Player1</label>
+                        <label class="lb2" for="" id="Cplay2">Player2</label>
+                    </div>
+
+                    <p><b>Choose Gender</b></p>
+
+
+
+                    <div style="margin-top: 15px;">
+                        <img id="myImage1"
+                            src="https://th.bing.com/th/id/OIP.H9FYQceSefc4O18Tj5zxZwHaHa?pid=ImgDet&rs=1">
+                        <img id="myImage2"
+                            src="https://th.bing.com/th/id/OIP.7z--rqgVzS_KCgrWosrfOQHaHX?pid=ImgDet&w=639&h=635&rs=1">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+
+
+
+</body>
+
+<script src="Tic.js"></script>
+
+</html>
